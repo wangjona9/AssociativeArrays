@@ -5,7 +5,6 @@ import java.math.BigInteger;
 /**
  * Experiments with our AssociativeArray class.
  *
- * @author Your Name Here
  * @author Samuel A. Rebelsky
  */
 public class AssociativeArrayExperiments {
