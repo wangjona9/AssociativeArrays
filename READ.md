@@ -1,3 +1,5 @@
+# AssociativeArrays
+
 Jonathan Wang
 
 This repository contains an implementation of an Associative array, along with its contents.
