@@ -100,6 +100,10 @@ public class AssociativeArray<K, V> {
    * get(key) will return value.
    */
   public void set(K key, V value) {
+    if (key == null) {
+      throw new IllegalArgumentException("Error: Cannot use a null key");
+    }
+
     for (int i = 0; i < size; i++) { // Loop through array
       if (this.pairs[i].key.equals(key)) {
         this.pairs[i].value = value; // Set array value to input value
@@ -123,6 +127,10 @@ public class AssociativeArray<K, V> {
    *                              array.
    */
   public V get(K key) throws KeyNotFoundException {
+    if (key == null) {
+      throw new IllegalArgumentException("Error: Cannot use a null key");
+    }
+
     for (int i = 0; i < size; i++) { // Loop through array
       if (this.pairs[i].key.equals(key)) {
         System.out.println(this.pairs[i].value); // Print index value to screen
@@ -136,6 +144,10 @@ public class AssociativeArray<K, V> {
    * Determine if key appears in the associative array.
    */
   public boolean hasKey(K key) {
+    if (key == null) {
+      throw new IllegalArgumentException("Error: Cannot use a null key");
+    }
+
     for (int i = 0; i < size; i++) {
       if (this.pairs[i].key.equals(key)) {
         return true; // Return true if key is found
